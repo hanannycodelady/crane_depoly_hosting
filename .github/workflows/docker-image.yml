@@ -24,8 +24,8 @@ jobs:
       - name: Build and push backend Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./flask-app
-          file: ./flask-app/Dockerfile
+          context: ./python
+          file: ./python/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/flask-app-han:latest
 
@@ -51,8 +51,8 @@ jobs:
       - name: Build and push frontend Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./flask-frontend
-          file: ./flask-frontend/Dockerfile
+          context: ./project_swaaba_aralee
+          file: ./project_swaaba_aralee/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/flask-frontend-han:latest
 
