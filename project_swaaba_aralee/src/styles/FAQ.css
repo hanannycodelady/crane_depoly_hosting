@@ -1,0 +1,47 @@
+.faq {
+  margin: 20px 0;
+  background-color: #f0f0f0; /* Background color for the entire FAQ section */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.faq-h {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.faq-item h5 {
+  cursor: pointer;
+  margin: 0;
+  padding: 10px;
+  background-color: #dcdcdc; /* Background color for the question headers */
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item p {
+  margin-top: 10px;
+  padding: 10px;
+  /* background-color: #dc1919; Background color for the answer text */
+  border-radius: 5px;
+  color: black;
+  align-items: left;
+}
+
+.faq-item .arrow {
+  transition: transform 0.3s ease;
+}
+
+.faq-item .arrow.expanded {
+  transform: rotate(90deg);
+}

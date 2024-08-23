@@ -1,0 +1,99 @@
+/* src/App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top: 500px;
+  box-sizing: border-box;
+  background-color: rgb(131, 101, 81);
+
+ 
+}
+
+
+.container {
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #b86607;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+.typewriter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.typewriter-container .Typewriter__cursor {
+  display: none; /* Hide the default cursor */
+}
+
+.typewriter-cursor {
+  font-size: 1.5em;
+  margin-left: 0.1em;
+  /* animation: blink 1s infinite; */
+  animation: move 1s infinite;
+  /* position: absolute; */
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+h2 {
+  text-align: center;
+}
+#text, h1{
+  text-align: center;
+  font-size: 400%;
+
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  /* background-color: #f9f9f9; */
+  margin-bottom: 1rem;
+  padding: 1rem;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+}
+
+
+

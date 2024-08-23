@@ -1,0 +1,32 @@
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: darkorange;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  h2 {
+    margin-top: 20px;
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fdfbfb;
+  }
+  

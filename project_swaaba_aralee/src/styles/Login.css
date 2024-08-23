@@ -1,0 +1,65 @@
+/* src/App.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding-top: 60px; 
+}
+.p1 {
+  color: rgb(14, 13, 13);
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+.login-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.text_area {
+  margin-bottom: 15px;
+}
+
+.text_input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #f77b08;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f7620b;
+}
+
+.swaaba {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
+.swaaba {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
+
+.swaaba.success {
+  color: rgb(15, 15, 15); 
+  font-size: large;
+}

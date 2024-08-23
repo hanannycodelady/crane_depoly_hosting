@@ -1,0 +1,100 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar is above other content */
+  background-color: rgb(221, 94, 9); 
+  color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 80px; /* Set a fixed height for the navbar */
+}
+
+/* Add top padding to the body or main content container to accommodate the navbar height */
+body {
+  margin: 0; /* Remove default margin */
+  padding-top: 120px; /* Match this with the navbar's height */
+}
+
+/* Navbar left section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  font-size: 30px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin: 0 10px;
+  text-align: center; /* Center text and icon */
+}
+
+.navbar-menu li .navbar-link {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column; /* Stack icon above text */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-menu li .navbar-link svg {
+  font-size: 24px; /* Increase icon size */
+  margin-bottom: 5px; /* Space between icon and text */
+}
+
+.navbar-menu li .navbar-link:hover {
+  color: #050505;
+  font-weight: bold;
+}
+
+/* User info styles */
+.user-info {
+  display: flex;
+  align-items: center;
+  color: white; /* User name color */
+}
+
+.user-avatar {
+  width: 40px; /* Adjust size of avatar */
+  height: 40px; /* Adjust size of avatar */
+  border-radius: 50%; /* Make avatar circular */
+  margin-right: 10px;
+}
+
+.user-info span {
+  font-weight: bold; /* Make user name bold */
+  text-shadow: 0 0 8px #ffffff; /* Glowing effect on the text */
+}
+
+/* Logout button */
+.logout-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logout-button:hover {
+  color: #e6d3d3; /* Change color on hover */
+}

@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding-top: 300px; /* Adjust this to match the height of your navbar */
+}
+
+.car-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.car-card {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  overflow: hidden;
+  width: 90%;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+
+.car-image {
+  width: 30%; /* Adjust to make the image smaller */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px; /* Added space between image and details */
+}
+
+.car-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-details {
+  flex: 1;
+  padding: 15px;
+}
+
+.car-details h3 {
+  margin: 0 0 10px;
+  color: #070707;
+  font-weight: bolder;
+  
+  text-align: center;
+  padding: 10px 0; /* Add padding for better spacing */
+  border-radius: 8px;
+}
+
+.car-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.car-details-table th,
+.car-details-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.car-details-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+
+.car-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Ensure the buttons span the full width */
+  margin-top: 15px;
+}
+
+.btn {
+  background-color: #f77b08;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  text-align: center;
+  transition: background-color 0.3s;
+  font-size: 0.9em;
+  display: flex; /* Flexbox to align icon and text */
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #0a0a0a;
+}
+
+.inquiry-btn {
+  background-color: #ec6409;
+}
+
+.buy-now-btn {
+  background-color: #070707;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inquiry-form-container, 
+.order-form-container {
+  width: 100%; /* Ensure the forms take up the full width of the card */
+  max-height: 300px; /* Set a max height for the form container */
+  overflow-y: auto; /* Enable scrolling if the content exceeds the max height */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.order-form-container {
+  width: 100%; /* Full width of the card */
+  max-height: 300px; /* Keep max height */
+  overflow-y: auto; /* Allow scrolling if necessary */
+  padding: 15px; /* Increase padding for more space inside the form */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space out elements vertically */
+}
+
+.order-form-container label,
+.order-form-container input,
+.order-form-container select,
+.order-form-container textarea {
+  width: 100%; /* Ensure elements take up full width */
+  font-size: 1em; /* Adjust font size for readability */
+  padding: 8px; /* Add padding inside form elements */
+  margin-bottom: 10px; /* Space out each form element */
+  border: 1px solid #ccc; /* Border for input fields */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.order-form-container button[type="submit"] {
+  width: 100%; /* Full width button */
+  padding: 12px; /* More padding for a larger clickable area */
+  font-size: 1em; /* Ensure consistent font size */
+  margin-top: 15px; /* Space above the submit button */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #080808; /* Button color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-form-container button[type="submit"]:hover {
+  background-color: #0c0c0c;
+}
+
+
+.car-specs-table {
+  width: 100%;
+  margin-bottom: 15px;
+  border-collapse: collapse;
+}
+
+.car-specs-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  font-weight: bold;
+}
+
+.car-specs-table tr td:first-child {
+  width: 30%;
+  color: #555;
+}
+
+.car-price {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #e00707;
+  margin-bottom: 10px;
+  text-align: left; /* Aligns the price to the left */
+  padding-top: 10px;
+}
